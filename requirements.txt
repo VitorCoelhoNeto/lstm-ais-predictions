@@ -1,6 +1,14 @@
 tensorflow
 keras
+pandas
+numpy
 pyais
 geopy
 scikit-learn
 scipy
+sklearn
+tqdm
+regex
+kafka-python
+folium
+matplotlib
