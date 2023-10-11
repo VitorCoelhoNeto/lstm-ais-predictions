@@ -48,7 +48,6 @@ def transform_dataset(datasetfile):
     '''
     Converts the dataset from lat/lon to dist/bear
     '''
-    # pd.read_pickle TODO
     dataset_coords = pd.read_csv(datasetfile, engine='python').values.astype('float32')
     dataset=[0,0,0,0]
     for i in range(len(dataset_coords)-1):
