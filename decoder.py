@@ -104,7 +104,7 @@ def get_log_files_list(path):
     return logFilesList
 
 
-def decoded_single_message(msg):
+def decode_single_message(msg):
     """
     Decode incoming Kafka message with AIS encoded string and save it to a CSV
     """
