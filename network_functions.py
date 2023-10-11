@@ -62,14 +62,10 @@ def preprocess_data(dataset):
     # Original dataset coordinates
     Coords = pd.read_csv(dataset, engine='python').values.astype('float32')
     # Pushes the first element of the array to last and every other element goes up 1 position, ex: [0,1,2,3,4] -> [1,2,3,4,0]
-    Coords=np.roll(Coords, -1, axis=0) # TODO: WHY IS THIS LINE NECESSARY
+    Coords=np.roll(Coords, -1, axis=0)
 
     # Get the train and test datasets divided in g_training_percentage for training, and the rest for testing
     train_size = int(len(dataset_X) * g_training_percentage)
-    test_size  = int(len(dataset_X) * g_testing_percentage) + train_size
-    #trainX, testX = dataset_X[0:train_size,:], dataset_X[train_size:,:] # The second ,: means the array columns, which, in this case, we want all
-    #trainY, testY = dataset_Y[0:train_size,:], dataset_Y[train_size:,:]
-    #Coords = Coords[train_size:,:]
     trainX, testX = dataset_X[0:train_size,:], dataset_X[train_size:len(dataset_X)+1,:]
     trainY, testY = dataset_Y[0:train_size,:], dataset_Y[train_size:len(dataset_X)+1,:]
     Coords = Coords[train_size:len(dataset_X)+1,:]
@@ -170,9 +166,6 @@ def evaluate_model(model, testX, testY, scaler_X, scaler_Y, Coords, bestScore, h
 
     for i in range(len(Coords)-1):
         R       = 6378.1                    # Radius of the Earth in km
-
-        d       = testY[i,0]                # Distance in km
-        brng    = testY[i,1]*(math.pi/180)  # Bearing is 90 degrees converted to radians
 
         # In the following lines, we have the predicted Distance/Bearing, and the current position
         # With the predicted Distance/Bearing, we can predict the next point in order to compare with the actual next position (Coords[i+1])
