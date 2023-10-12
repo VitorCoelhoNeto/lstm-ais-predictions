@@ -19,9 +19,9 @@ def start_model_creation(currentMMSI):
     dataset = 'ignoreFolder/decodedCSVsList/' + str(currentMMSI) + '.csv'
     bestScore = 100000.0
     # Number of times to evole the population
-    generations = 10 #50 TODO
+    generations = 50
     # Number of networks in each generation
-    population = 10 #15 TODO
+    population = 15
 
     bestScoreEvolution = []
 
