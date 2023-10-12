@@ -44,11 +44,13 @@ def convert_to_distance_bearing(pointAlat, pointAlon, pointBlat, pointBlon):
     return distance, A
 
 
-def transform_dataset(datasetfile):
+def transform_dataset(datasetfile, predictFlag = False):
     '''
     Converts the dataset from lat/lon to dist/bear
     '''
     dataset_coords = pd.read_csv(datasetfile, engine='python').values.astype('float32')
+    if predictFlag:
+        dataset_coords = dataset_coords[100:]
     dataset=[0,0,0,0]
     for i in range(len(dataset_coords)-1):
         speed = dataset_coords[i][2]
