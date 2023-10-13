@@ -53,7 +53,6 @@ def start_kafka():
             if numLines%100 == 1:
                 start_model_creation(currentMMSI)
             elif numLines > 103:
-                # mypred, true, distance
                 resultsList = predict_position(currentMMSI)
                 create_map(resultsList, currentMMSI)
 

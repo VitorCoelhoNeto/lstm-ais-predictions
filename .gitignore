@@ -16,6 +16,7 @@ ignoreFolder/trash/
 ignoreFolder/predictionOutput/*.txt
 ignoreFolder/predictionOutput/*.save
 ignoreFolder/predictionOutput/*.html
+ignoreFolder/predictionOutput/*.csv
 
 # Distribution / packaging
 .Python
