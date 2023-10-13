@@ -84,7 +84,7 @@ def predict_position(currentMMSI):
 
     # Report anomalous behavior if one exists
     for value in  resultsList:
-        if value[2] >= (average * 2.5):
+        if value[2] >= (average * 2.5) and value[2] > 5550: # 3 nautical miles
             producer = KafkaProducer(bootstrap_servers=['localhost:9092'], api_version=(0,10,1))
             producer.send('anomalousReport', 'Anomalous Behavior Detected in vessel {0}. Predicted position: {1}, True position: {2}, Distance: {3}'.format(str(currentMMSI), str(value[0]), str(value[1]), str(value[2])).encode())
 
