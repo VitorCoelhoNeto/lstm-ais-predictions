@@ -7,16 +7,16 @@ __pycache__/
 *.so
 
 # Folders
-ignoreFolder/decodedCSVsList/*.csv
-ignoreFolder/MetricsOutput/*.save
-ignoreFolder/MetricsOutput/*.txt
-ignoreFolder/ModelsOutput/*.keras
-ignoreFolder/ScalersOutput/*.save
-ignoreFolder/trash/
-ignoreFolder/predictionOutput/*.txt
-ignoreFolder/predictionOutput/*.save
-ignoreFolder/predictionOutput/*.html
-ignoreFolder/predictionOutput/*.csv
+outputs/decodedCSVsList/*.csv
+outputs/MetricsOutput/*.save
+outputs/MetricsOutput/*.txt
+outputs/ModelsOutput/*.keras
+outputs/ScalersOutput/*.save
+outputs/trash/
+outputs/predictionOutput/*.txt
+outputs/predictionOutput/*.save
+outputs/predictionOutput/*.html
+outputs/predictionOutput/*.csv
 
 # Distribution / packaging
 .Python
