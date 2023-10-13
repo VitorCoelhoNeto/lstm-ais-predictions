@@ -13,6 +13,9 @@ ignoreFolder/MetricsOutput/*.txt
 ignoreFolder/ModelsOutput/*.keras
 ignoreFolder/ScalersOutput/*.save
 ignoreFolder/trash/
+ignoreFolder/predictionOutput/*.txt
+ignoreFolder/predictionOutput/*.save
+ignoreFolder/predictionOutput/*.html
 
 # Distribution / packaging
 .Python
