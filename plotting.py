@@ -178,7 +178,7 @@ def plot_best_score_graph(currentMMSI):
     # Plotting the graph
     plt.plot(bestScoreList)
     plt.title('Best Score Evolution')
-    plt.ylabel('Best Score')
+    plt.ylabel('Average Score')
     plt.xlabel('Generation')
     plt.legend(['score'], loc='upper left')
     plt.show()
