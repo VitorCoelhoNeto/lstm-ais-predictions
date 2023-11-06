@@ -5,7 +5,7 @@ from pyais.stream import FileReaderStream
 from tqdm import tqdm
 import regex as re
 
-csvSavePath = 'ignoreFolder/decodedCSVsList/'
+csvSavePath = 'outputs/decodedCSVsList/'
 
 def export_messages_with_multi_part(outputPath, logFilesList):
     """

@@ -5,12 +5,12 @@ from matplotlib import pyplot as plt
 from tensorflow import keras
 
 # Saves
-MAP_SAVE_PATH   = 'ignoreFolder/predictionOutput/'
-VESSEL_POS_FILE = 'ignoreFolder/decodedCSVsList/'
+MAP_SAVE_PATH   = 'outputs/predictionOutput/'
+VESSEL_POS_FILE = 'outputs/decodedCSVsList/'
 
 # Load paths
-METRICS_PATH = "ignoreFolder/MetricsOutput/"
-TEST_DATA    = "ignoreFolder/"
+METRICS_PATH = "outputs/MetricsOutput/"
+TEST_DATA    = "outputs/"
 
 def createNumberMarker(color, number):
     """ 

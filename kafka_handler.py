@@ -9,7 +9,7 @@ from plotting import create_map
 KAFKA_SERVER      = 'localhost:9092'
 KAFKA_TOPIC       = 'test'
 KAFKA_API_VERSION = (0,10)
-CSV_FILE_PATH     = 'ignoreFolder/decodedCSVsList/'
+CSV_FILE_PATH     = 'outputs/decodedCSVsList/'
 
 def start_kafka():
     """

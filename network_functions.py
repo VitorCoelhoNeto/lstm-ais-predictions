@@ -25,10 +25,10 @@ g_epochs = 100
 g_input_shape = (1, 4)
 g_earlyStopper = EarlyStopping(patience=7, monitor='loss', mode='min')
 g_loss_function = 'mean_squared_error'
-g_savePath        = 'ignoreFolder/ModelsOutput/' 
-g_xScalerSavePath = 'ignoreFolder/ScalersOutput/'
-g_yScalerSavePath = 'ignoreFolder/ScalersOutput/'
-g_fitHistoryFile  = 'ignoreFolder/MetricsOutput/'
+g_savePath        = 'outputs/ModelsOutput/' 
+g_xScalerSavePath = 'outputs/ScalersOutput/'
+g_yScalerSavePath = 'outputs/ScalersOutput/'
+g_fitHistoryFile  = 'outputs/MetricsOutput/'
 
 np.set_printoptions(formatter={'float_kind':'{:f}'.format})
 

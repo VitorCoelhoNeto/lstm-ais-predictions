@@ -16,7 +16,7 @@ def start_model_creation(currentMMSI):
     startTime = startTime.strftime("%H:%M:%S")
 
     # Global variables
-    dataset = 'ignoreFolder/decodedCSVsList/' + str(currentMMSI) + '.csv'
+    dataset = 'outputs/decodedCSVsList/' + str(currentMMSI) + '.csv'
     bestScore = 100000.0
     # Number of times to evole the population
     generations = 50
@@ -98,5 +98,5 @@ def start_model_creation(currentMMSI):
     endTime = endTime.strftime("%H:%M:%S")
     print("Time started: ", str(startTime), "\nTime finished: ", str(endTime))
     
-    with open('ignoreFolder/MetricsOutput/' + str(currentMMSI) + '.txt', 'w') as geneticEvolutionFile:
+    with open('outputs/MetricsOutput/' + str(currentMMSI) + '.txt', 'w') as geneticEvolutionFile:
         geneticEvolutionFile.write(str(bestScoreEvolution))

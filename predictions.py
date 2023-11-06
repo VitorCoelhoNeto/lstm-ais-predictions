@@ -8,10 +8,10 @@ import geopy.distance
 from latlongTodistbear import transform_dataset
 
 # Testing Globals
-g_testingDataPath    = 'ignoreFolder/decodedCSVsList/'
-g_scalerXFilename    = 'ignoreFolder/ScalersOutput/'
-g_scalerYFilename    = 'ignoreFolder/ScalersOutput/'
-g_model_to_be_loaded = 'ignoreFolder/ModelsOutput/'
+g_testingDataPath    = 'outputs/decodedCSVsList/'
+g_scalerXFilename    = 'outputs/ScalersOutput/'
+g_scalerYFilename    = 'outputs/ScalersOutput/'
+g_model_to_be_loaded = 'outputs/ModelsOutput/'
 
 
 def predict_position(currentMMSI):
