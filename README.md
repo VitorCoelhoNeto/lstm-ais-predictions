@@ -4,7 +4,7 @@ This project has been developed in the context of the dissertation of the master
 ## Setting up Kafka
 To setup Kafka, download it from its [official website](https://kafka.apache.org/downloads). Select the "Scala 2.13", under the Binary Downloads.
 
-After downloading the file, extract the compressed file in the computer's root (e.g. C:)
+After downloading the file, extract the compressed file in the computer's root (e.g. C:/)
 
 Rename the folder to "kafka"
 
@@ -17,18 +17,24 @@ Repeat this process for the "zookeeper" file in the same "config" folder, search
 The default port for the server is 9092, and the server will run on "localhost:9092"
 
 With a command line interface open on the installed Kafka directory:
+
 To start, first run Zookeeper:
 `.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties`
 
 Then Kafka:
+
 `.\bin\windows\kafka-server-start.bat .\config\server.properties`
 
 Then create the "test" topic:
+
 `kafka-topics.bat --create --bootstrap-server localhost:9092 --topic test`
+
 Repeat this step for the "anomalousReport" topic
 
 To stop running the server run these commands in order:
+
 `.\bin\windows\kafka-server-stop.bat .\config\server.properties`
+
 `.\bin\windows\zookeeper-server-stop.bat .\config\zookeeper.properties`
 
 ##### Helpful video:
